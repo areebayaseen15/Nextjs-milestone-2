@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1 {
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+a:hover {
+    color: #003366;
+    text-decoration: underline;
+}
+
+/* Layout */
+.Cv {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.Cv img {
+    float: right;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
+
+/* Preformatted Text */
+pre {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-left: 4px solid #0066cc;
+    overflow-x: auto;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+pre b {
+    color: #333;
+}
+
+/* Skill Section */
+ul li {
+    background-color: #e6f7ff;
+    margin: 5px 0;
+    padding: 8px;
+    border-left: 5px solid #0066cc;
+    transition: background-color 0.3s;
+}
+
+ul li:hover {
+    background-color: #ccefff;
+}
+
+/* Reference Section */
+li:last-child {
+    font-style: italic;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .Cv {
+        padding: 15px;
+    }
+
+    .Cv img {
+        height: 80px;
+        width: 80px;
+        float: none;
+        display: block;
+        margin: 0 auto 15px auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    pre {
+        font-size: 12px;
+    }
+}
